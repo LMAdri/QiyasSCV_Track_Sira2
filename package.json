@@ -1,0 +1,22 @@
+{
+  "name": "graduate-employment-tracker",
+  "version": "1.0.0",
+  "description": "Employment tracking system for Qiyas SCV Intermediate Digital Skills graduates",
+  "main": "server/index.js",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/seed.js",
+    "seed:demo": "node --disable-warning=ExperimentalWarning server/seed.js --demo",
+    "test": "node --disable-warning=ExperimentalWarning test/logic.test.js && node --disable-warning=ExperimentalWarning test/routes.test.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.15.0"
+  }
+}
